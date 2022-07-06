@@ -10,7 +10,7 @@
 ### HTML
 
 - [basic](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/HTML_basic.md)
-- [form](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/HTML_form.md)
-- [semantic / search engine optimization](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/HTML_other.md)
+- [form](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/HTML_formtag.md)
+- [semantic / search engine optimization](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/HTML_additional.md)
 
 ### CSS
