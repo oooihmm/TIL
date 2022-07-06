@@ -125,5 +125,3 @@ gitk : 만들어진 branch들 사이의 관계도를 확인
 ```
 
 `master` : 제일 처음 committed 완료된 세팅 값. -> main이 됨 (뼈대)
-
----
