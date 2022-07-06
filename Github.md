@@ -88,5 +88,3 @@ Pull Request : 다른 사람의 Github Repository를 가져와 수정한 후, �
 setting -> collaborators & teams -> collaborators에 공동 작업자 지정
 
 github -> `F11 단축키` : 각 코드의 영역 확인 가능
-
----
