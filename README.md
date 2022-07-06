@@ -1,2 +1,12 @@
 # TIL
-Today I Learned
+
+## **1주차**
+
+### Git & Gitub
+
+- [Git](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/Git.md)
+- [Github](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/Github.md)
+
+### HTML
+
+### CSS
