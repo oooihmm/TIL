@@ -51,7 +51,7 @@ git add - git commit - git push
 ### remote 명령어
 
 ```
-git clonde <repository URL> : 전체를 다 가져옴
+git clone <repository URL> : 전체를 다 가져옴
 git pull <repository name> <branch name> : 같은 branch일 때 최신 버전을 합침
 git fetch <repository name> <branch name> : 변경 내용만 가져오고 안 합침
 git merge <repository name> <branch name>
