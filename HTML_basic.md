@@ -15,6 +15,8 @@
 
 > html : editer / 웹브라우저 : viewer
 
+[**MDN html**](https://developer.mozilla.org/ko/docs/Web/HTML) -> 태그와 속성 등을 확인 가능!
+
 ---
 
 ## 2. 문서의 작성
@@ -46,17 +48,24 @@ ul : unordered list
 
 `<head>내용</head>`: 웹브라우저 외부에서 문서의 정보를 알려주는 부분
 
--> 안에 `<title></title>`, `<meta>` (속성 : charset, name, content) 등을 중첩하여 사용
+-> 안에 `<title></title>`, `<meta>` 등을 중첩하여 사용
 
 `<body>내용</body>` : 웹브라우저 내부에 나오는 본문
 
-head와 body는 `<html></html>` 태그로 감싸야 함
+> head와 body는 `<html></html>` 태그로 감싸야 함
 
 ### DOCTYPE (Document type declaration)
 
 문서의 맨 위에 `<!DOCTYPE html>` 입력 -> 문서 선언
 
 브라우저에게 이 문서가 어떤 표준을 따르고 있는지를 선언함
+
+### meta 속성
+|meta 속성|내용|
+|---|---|
+|charset="utf-8"|한글이 깨지는 것을 방지|
+|name=" "| |
+|content=" "| |
 
 ---
 
