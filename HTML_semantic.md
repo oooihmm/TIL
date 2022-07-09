@@ -1,4 +1,4 @@
-# HTML 부가 내용
+# HTML semantic과 검색엔진 최적화
 
 ## 1. semantic
 
