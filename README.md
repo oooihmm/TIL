@@ -14,3 +14,5 @@
 - [semantic / search engine optimization](https://github.com/oooihmm/TIL/blob/main/HTML_additional.md)
 
 ### CSS
+
+- [basic](https://github.com/oooihmm/TIL/blob/main/CSS_basic.md)
