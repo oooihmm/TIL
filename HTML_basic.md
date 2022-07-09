@@ -15,7 +15,7 @@
 
 > html : editer / 웹브라우저 : viewer
 
-[**MDN html**](https://developer.mozilla.org/ko/docs/Web/HTML) -> 태그와 속성 등을 확인 가능!
+[**MDN html**](https://developer.mozilla.org/ko/docs/Web/HTML) -> HTML 태그와 속성 등을 확인 가능!
 
 ---
 
@@ -61,11 +61,12 @@ ul : unordered list
 브라우저에게 이 문서가 어떤 표준을 따르고 있는지를 선언함
 
 ### meta 속성
-|meta 속성|내용|
-|---|---|
-|charset="utf-8"|한글이 깨지는 것을 방지|
-|name=" "| |
-|content=" "| |
+
+| meta 속성       | 내용                    |
+| --------------- | ----------------------- |
+| charset="utf-8" | 한글이 깨지는 것을 방지 |
+| name=" "        |                         |
+| content=" "     |                         |
 
 ---
 
