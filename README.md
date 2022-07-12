@@ -4,18 +4,18 @@
 
 ### Git & Gitub
 
-- [Git](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/Git.md)
-- [Github](https://github.com/oooihmm/TIL/blob/01661bd7a6ab0ecf4b095a9d35119cc4750dced4/Github.md)
+- [Git](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/Git.md)
+- [Github](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/Github.md)
 
 ### HTML
 
-- [basic](https://github.com/oooihmm/TIL/blob/main/HTML_basic.md)
-- [form](https://github.com/oooihmm/TIL/blob/main/HTML_formtag.md)
-- [semantic / search engine optimization](https://github.com/oooihmm/TIL/blob/main/HTML_additional.md)
+- [basic](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/HTML_basic.md)
+- [form](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/HTML_form.md)
+- [semantic / search engine optimization](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/HTML_semantic.md)
 
 ### CSS
 
-- [basic](https://github.com/oooihmm/TIL/blob/main/CSS_basic.md)
+- [basic](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/CSS_basic.md)
 
 ---
 
@@ -23,6 +23,6 @@
 
 ### JavaScript
 
-- [basic](https://github.com/oooihmm/TIL/blob/main/JavaScript_basic.md)
-- [programming](https://github.com/oooihmm/TIL/blob/main/JavaScript_programming.md)
-- [object](https://github.com/oooihmm/TIL/blob/main/JavaScript_object.md)
+- [basic](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/JaveScript_basic.md)
+- [programming](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/JavaScript_programming.md)
+- [object](https://github.com/oooihmm/TIL/blob/38adfe64f76cc8e756cf5d83ebf97bda3689dc67/JavaScript_object.md)
