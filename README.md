@@ -16,3 +16,13 @@
 ### CSS
 
 - [basic](https://github.com/oooihmm/TIL/blob/main/CSS_basic.md)
+
+---
+
+## **2주차**
+
+### JavaScript
+
+- [basic](https://github.com/oooihmm/TIL/blob/main/JavaScript_basic.md)
+- [programming](https://github.com/oooihmm/TIL/blob/main/JavaScript_programming.md)
+- [object](https://github.com/oooihmm/TIL/blob/main/JavaScript_object.md)
