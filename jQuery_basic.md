@@ -30,3 +30,23 @@
 ```
 $(선택자).method1().methood2();
 ```
+
+---
+
+## wrapper
+
+`jQuery(element object|css selector)`  
+인자로 전달된 요소들에 jQuery의 기능성을 부가해서 변환
+
+### wrapper의 안전한 사용
+
+```js
+(function ($) {
+  $(선택자).method();
+})(jQuery);
+```
+
+### 제어 대상의 지정
+
+`jQuery(selector, [context])`
+`jQuery(element)`
