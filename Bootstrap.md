@@ -1,6 +1,6 @@
 # [Bootstrap](https://getbootstrap.com/)
 
-<h3>-> 반응형 웹사이트 제작<h3>
+<h3>-> 반응형 웹사이트 제작</h3>
 
 Place the `<link>` tag in the `<head>` for our CSS, and the `<script>` tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing </body>.
 
