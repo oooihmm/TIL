@@ -99,9 +99,6 @@ SELECT <column>, SUM(<column>)
 
 - `ORDER BY <column> DESC` : 특정 열에 대하여 내림차순으로 정렬
 
-### 2-5 SELECT문을 이용한 연산 함수
-ㅈㄴ만아요 찾아보세요 💞
-
 ---
 
 ## 3. JOIN과 관계형 데이터베이스
