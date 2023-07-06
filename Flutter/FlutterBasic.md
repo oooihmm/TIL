@@ -68,6 +68,7 @@ MaterialApp(
 MaterialApp(
   home: Scaffold(
     appBar: AppBar(),
+    drawer: Drawer(), 
     body: Container(),
     bottomNavigationBar: BottomAppBar(),
   )
@@ -79,6 +80,8 @@ MaterialApp(
 `Column()` : 위젯을 세로로 배치함
 
 `ListView()` : 위젯을 세로로 배치하고, 스크롤바가 생김
+
+`ListTile()` : ListView안에 배치되는 개별의 tile
 </br>
 </br>
 `mainAxisAlignment: MainAxisAlignment.속성` : Row 또는 Column 요소의 축에 대해서 정렬하는 속성
@@ -105,7 +108,7 @@ MaterialApp(
 );
 ```
 
----
+___
 
 ## Container 
 
@@ -174,6 +177,10 @@ Row(
 3. button
     - TextButton()
     - IconButton()
-    - ElevatesButton()
+    - ElevatedButton()
+    - OutlinedButton()
 
+      버튼의 style 속성 : `style: <버튼 종류>.styleForm()`
+
+      버튼 비활성화 : `onPressed: null`
 ---
