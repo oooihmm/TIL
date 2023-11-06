@@ -104,9 +104,7 @@ function example() {
 }
 ```
 
-## 5. Components
-
-### 클래스형 컴포넌트
+## 5. Class Components
 
 ```js
 import React from "react";
@@ -127,13 +125,29 @@ export class Square extends React.Component {
 
 부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 방법
 
-```js
-<자식컴포넌트 자식변수명={this.부모변수명} />
+- 변수의 전달
 
-###
+  ```js
+  <자식컴포넌트 자식변수명={this.부모변수명} />
 
-<div>{this.props.value}</div>
-```
+  ###
+
+  <div>{this.props.value}</div>
+  ```
+
+- 메소드의 전달
+
+  ```js
+  <자식컴포넌트 자식메소드명={this.부모메소드명} />
+
+      ###
+
+      <button
+        이벤트핸들러={() => { this.props.자식메소드명();}}
+      >
+        {this.props.value}
+      </button>
+  ```
 
 Props는 읽기 전용으로 자녀 컴포넌트 입장에서는 변하지 않음
 
