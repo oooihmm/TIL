@@ -1,4 +1,4 @@
-b# React Hooks
+# React Hooks
 
 ## 1. Class Components와 Functional Components
 
@@ -20,7 +20,7 @@ b# React Hooks
 2. Updating -> componentDidUpdate
 3. Unmounting -> componentWillUnmount
 
-=> React 생명 주기 사용을 위해 기존에는 클래스 컴포넌트 사용
+=> React 생명 주기 사용을 위해 기존에는 클래스 컴포넌트 사용 </br>
 but 16.8 업데이트 이후 함수형 컴포넌트에서도 생명 주기를 사용할 수 있게 됨!
 
 ## 2. React Hooks
@@ -45,6 +45,8 @@ const Square () =>  {
   )
 }
 ```
+
+rafce 단축키를 이용하여 쉽게 만들 수 있다.
 
 ### 함수형 컴포넌트의 상태 관리
 
@@ -106,3 +108,27 @@ const Square () =>  {
     );
   };
   ```
+
+  ## 4. Github를 이용한 배포
+
+  ### gh-pages 모듈 설치
+
+  `npm install gh-pages --save-dev`
+
+  ### package.json 수정
+
+  1. homepage 추가
+
+  ```
+  "homepage" = "<github 주소>"
+  ```
+
+  2. deploy script 추가
+
+  ```
+  "deploy" = "gh-pages -d build"
+  ```
+
+  ### script 실행
+
+  npm run deploy
