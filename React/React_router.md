@@ -21,13 +21,13 @@ React는 index.html라는 하나의 템플릿을 가지는 Single Page Applicati
 /src/index.js
 
 ```js
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter>
-  <App />
-  </BrowserRouter>
-  document.getElementById('root')
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
+	document.getElementById("root")
 );
 ```
 
@@ -39,20 +39,20 @@ BrouserRouter는 HTML History API를 사용하여 UI를 URL과 동기화된 상�
 
 ```js
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="about" element={<About />} />
+				<Route path="contact" element={<Contact />} />
+			</Routes>
+		</div>
+	);
 }
 ```
 
 - Routes : 모든 개별 경로에 대한 상위 역할
-- Route : 단일 경로를 만든느 데에 사용
+- Route : 단일 경로를 만든느 데에 사용, path와 element를 프로퍼티로 가짐
 
 ### `<Link />`를 이용해 경로 이동하기
 
@@ -73,9 +73,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/" element={<Home />} >
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
         <Route />
       </Routes>
     </div>
@@ -115,16 +115,16 @@ function FunctionName() {
 import { useParams } from "react-router-dom";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/:paramsName" element={<Element />} />
-    </Routes>
-  );
+	return (
+		<Routes>
+			<Route path="/:paramsName" element={<Element />} />
+		</Routes>
+	);
 }
 
 function Element() {
-  let params = useParams();
-  return <tag>{params.paramsName}</tag>;
+	let params = useParams();
+	return <tag>{params.paramsName}</tag>;
 }
 ```
 
@@ -134,6 +134,6 @@ function Element() {
 
 ```js
 function Element() {
-  let location = useLocation();
+	let location = useLocation();
 }
 ```
