@@ -137,62 +137,6 @@ export class Square extends React.Component {
 - extends : 클래스를 다른 클래스의 자식으로 만들기 위해 사용
 - export default : 해당 모듈엔 개체가 하나만 있다는 사실을 명확히 함
 
-### 클래스형 컴포넌트의 Props
-
-부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 방법
-
-- 변수의 전달
-
-  ```js
-  <자식컴포넌트 자식변수명={this.부모변수명} />
-
-  ###
-
-  <div>{this.props.value}</div>
-  ```
-
-- 메소드의 전달
-
-  ```js
-  <자식컴포넌트 자식메소드명={this.부모메소드명} />
-
-      ###
-
-      <button
-        이벤트핸들러={() => { this.props.자식메소드명();}}
-      >
-        {this.props.value}
-      </button>
-  ```
-
-Props는 읽기 전용으로 자녀 컴포넌트 입장에서는 변하지 않음
-
-### 클래스형 컴포넌트의 상태 관리
-
-리액트에서 데이터가 변할 때 화면을 다시 렌더링 해주기 위해서는 React State를 사용해야 함 </br> -> 컴포넌트가 State를 관리하고, State가 변경되면 컴포넌트는 Re-rendering됨
-
-1. State 추가 </br>React 컴포넌트는 생성자에 this.state를 설정하는 것으로 state를 가질 수 있음
-
-   ```js
-   constructor(props) {
-     super(props);
-     this.state = {
-       value = null
-     }
-   }
-   ```
-
-- constructor(생성자) : 인스턴스화된 객체에서 다른 메서드를 호출하기 전에 수행해야 하는 사용자 지정 초기화를 제공
-- super : super 키워드는 자식 클래스 내에서 부모 클래스의 생성자나 메소드를 호출하기 위해 사용
-- super와 this : this 키워드는 반드시 부모 클래스의 생성자를 호출한 다음에 사용
-- super(props) : React.Component 객체가 생성될 때 props 속성을 초기화하기 위해 부모 컴포넌트에게 props를 전달, 또한 생성자 내부에서도 this.props를 사용할 수 있도록 보장하기 위함
-
-2. State 변경 </br> this.setState 메소드를 이용해서 State값에 접근 가능
-   ```
-   this.setState({변수명: ... })
-   ```
-3. State 사용 </br> `this.state.변수명`을 이용하면 State에 저장된 원하는 변수값을 가져올 수 있음
-
 ### Functional Components
 
 ```js
@@ -206,67 +150,6 @@ const Square () =>  {
 ```
 
 rafce 단축키를 이용하여 쉽게 만들 수 있다.
-
-### 함수형 컴포넌트의 상태 관리
-
-1. 상태 관리 선언
-
-   ```js
-   import { useState } from 'react'
-
-   const [<getter>, <setter>] = useState[<초기값>];
-   ```
-
-2. 상태값 변경시 setter 함수를 사용해서 변경 가능
-
-- setter 함수의 매개변수
-
-  - setter(getter + 1) : getter를 직접적으로 사용하면 setter 함수의 중복 처리가 안 됨
-
-    ```js
-    const [value, setValue] = useState[0];
-
-    setValue(value + 1);
-    setValue(value + 1);
-    console.log(value); // 출력값은 1
-    ```
-
-  - setter(prev => prev + 1) : `privious`라는 프로퍼티를 사용하면 setter 함수의 중복 처리가 가능
-
-    ```js
-    const [value, setValue] = useState[0];
-
-    setValue((prev) => prev + 1);
-    setValue((prev) => prev + 1);
-    console.log(value); // 출력값은 2
-    ```
-
-### 함수형 컴포넌트의 props
-
-1. 매개변수에 props 변수 및 메소드 작성
-2. 작성한 매개변수 사용
-
-- `props.<value>` 또는 `props.<method>`로 사용
-  ```js
-  const Square = ({ onClick, value }) => {
-  	return (
-  		<button className="square" onClick={props.onClick()}>
-  			{props.value}
-  		</button>
-  	);
-  };
-  ```
-- 그냥 `<value>` 또는 `<method>`로 사용도 가능
-
-  ```js
-  const Square = ({ onClick, value }) => {
-  	return (
-  		<button className="square" onClick={onClick()}>
-  			{value}
-  		</button>
-  	);
-  };
-  ```
 
 ### 클래스형 컴포넌트와 함수형 컴포넌트
 
@@ -307,3 +190,50 @@ but 16.8 업데이트 이후 React Hooks를 이용해 함수형 컴포넌트에�
 
 ※ HOC(Higher Order Components)
 </br> 화면에서 재사용 가능한 로직만을 분리해서 component로 만들고, 재사용 불가능한 UI와 같은 다른 부분들은 Parameter로 받아서 처리하는 방법
+
+## 7. React Query
+
+데이터 fetching, caching, 동기화, 서버 데이터 업데이트 등을 쉽게 만들어주는 라이브러리
+
+```bash
+npm install @tanstack/react-query
+npm install @tanstack/react-query-devtools
+```
+
+app.js에서 root가 되는 컴포넌트를 QueryClientProvider로 감싸서 실행
+
+```js
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+
+function App() {
+	return;
+	<QueryClientProvider client={queryClient}>
+		<ReactQueryDevtools initialIsOpen={true} />
+		... //root 컴포넌트
+	</QueryClientProvider>;
+}
+```
+
+### useQuery
+
+get 요청과 같이 서버로부터 데이터를 조회 시에 사용
+
+```js
+import { useQuery } from 'react-query'
+
+const { loading, error, data } = useQuery(<QueryKey>, <QueryFn>);
+```
+
+`<QueryKey>`는 배열의 형태로 전달한다 (ex: ['key'])
+
+### useQuery
+
+post 요청과 같이 데이터를 변경하거나 삭제할 때 사용
+
+```js
+import { useMutation } from 'react-query';
+
+const { loading, error, data } = useQuery(<MutationFn>);
+```
